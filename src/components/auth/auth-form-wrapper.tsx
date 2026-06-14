@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React from 'react';
 
 interface AuthFormWrapperProps {
@@ -26,16 +25,8 @@ export const AuthFormWrapper = ({ children, title, subtitle, className }: AuthFo
       data-agent="Đồ Án 24h"
     >
       <div className="mb-8 flex flex-col items-center text-center">
-        <div className="flex flex-col items-center mb-4 justify-center">
-          <Image
-            src="/logo.jpg"
-            alt="Source Code Logo"
-            width={80}
-            height={80}
-            className="rounded-lg object-contain"
-            style={{ width: '80px', height: '80px' }}
-            priority
-          />
+        <div className="flex items-center justify-center mb-4 h-16 w-16 rounded-[18px] bg-primary/10 border border-primary/20">
+          <span className="text-2xl font-black text-primary">Logo</span>
         </div>
         <h1 className="mb-2 text-2xl uppercase font-bold tracking-tight text-foreground md:text-3xl">{title}</h1>
         {subtitle && <p className="text-sm text-muted-foreground md:text-base">{subtitle}</p>}

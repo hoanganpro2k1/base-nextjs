@@ -18,30 +18,25 @@ Always:
 # AI Project Instructions
 
 Project Name:
-Đồ Án 24h
+**[TODO: Thay tên dự án tại đây]**
 
-This is a premium marketplace platform
-for selling source code projects
-and graduation thesis projects.
+Description:
+**[TODO: Mô tả ngắn về dự án]**
 
 ---
 
-# Backend NestJS Integration (CRITICAL)
+# Backend Integration (CRITICAL)
 
-Mã nguồn dự án Backend nằm ở thư mục riêng biệt:
+- **Backend path**: `[TODO: đường dẫn tuyệt đối tới backend, ví dụ D:\Projects\my-backend]`
+- **Local URL**: `http://localhost:3001`
 
-- **Đường dẫn Backend**: `D:\SourceDoan\be-source-doan`
-- **Địa chỉ Local**: `http://localhost:3001`
-- **Tài liệu ngữ cảnh**: Đọc thêm tại [.agent/context/backend.md](file:///d:/SourceDoan/source-doan/.agent/context/backend.md)
-
-**QUY TẮC BẮT BUỘC CHO AI**: Khi người dùng yêu cầu làm việc với API hoặc tính năng (ví dụ: login, register, checkout, v.v.), AI phải **chủ động** đọc trực tiếp code của Backend tại `D:\SourceDoan\be-source-doan` thông qua các công cụ hệ thống (`view_file`, `list_dir`, `grep_search`) để biết chính xác cấu trúc API, DTO, Database Schema trước khi viết code Frontend.
+**QUY TẮC BẮT BUỘC**: Khi làm việc với API (login, register, CRUD, v.v.), AI **phải chủ động đọc code Backend** qua công cụ hệ thống trước khi viết code Frontend. Không tự giả định endpoint hoặc DTO.
 
 ---
 
 # IMPORTANT
 
-Before generating code,
-read and follow all rules and context inside:
+Before generating code, read and follow all rules and context inside:
 
 .agent/
 
@@ -52,8 +47,7 @@ Especially:
 - .agent/decisions/
 - .agent/examples/
 
-The .agent folder acts as the main AI memory
-and project knowledge base.
+The .agent folder acts as the main AI memory and project knowledge base.
 
 Always prioritize:
 
@@ -71,7 +65,6 @@ Always prioritize:
 - Prefer reusable components
 - Follow feature-based architecture
 - Generate production-ready code
-- Maintain premium SaaS UI quality
 
 ---
 
@@ -79,7 +72,7 @@ Always prioritize:
 
 - ALWAYS use `@tanstack/react-query` for API calls, data fetching, and mutations (`useQuery`, `useMutation`).
 - NEVER use manual `useState` or `useEffect` for handling API loading states, errors, or fetching.
-- ALWAYS extract logic into separate custom hooks (e.g., `use-login-form.ts`, `use-register-form.ts`). Keep UI components clean and focused purely on rendering.
+- ALWAYS extract logic into separate custom hooks (e.g., `use-login-form.ts`). Keep UI components clean.
 
 ---
 
@@ -103,7 +96,7 @@ Avoid:
 # Next.js Principles
 
 - Prefer Server Components
-- Avoid unnecessary use client
+- Avoid unnecessary `use client`
 - Optimize performance
 - Use Metadata API
 - Follow App Router best practices
@@ -132,13 +125,9 @@ Avoid:
 Generated code must:
 
 - Match the existing design system
-- Follow .agent rules
-- Follow existing examples
-- Be maintainable
-- Be scalable
-- Be responsive
-- Be SEO-friendly
-- Be production-ready
+- Follow .agent rules and examples
+- Be maintainable, scalable, responsive
+- Be SEO-friendly and production-ready
 
 ---
 
