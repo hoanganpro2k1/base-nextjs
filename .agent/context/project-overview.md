@@ -1,10 +1,10 @@
 # Project Overview
 
 Project Name:
-Đồ Án 24h
+TradeZully
 
 Description:
-A premium platform for selling source code projects and graduation thesis projects for students.
+A premium platform for tracking trading accounts and expenses.
 
 Goals:
 

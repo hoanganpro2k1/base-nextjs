@@ -4,14 +4,14 @@ Dự án Frontend này được kết nối trực tiếp với dự án Backend
 
 ## Thông tin dự án Backend
 
-- **Đường dẫn thư mục (Workspace Path)**: `D:\SourceDoan\be-source-doan`
-- **Cổng chạy Local (Local URL)**: `http://localhost:3001`
-- **Cơ sở dữ liệu (Database)**: PostgreSQL `be_source_doan`
-  - URL Kết nối: `postgresql://postgres:root@localhost:5432/be_source_doan?schema=public`
+- **Đường dẫn thư mục (Workspace Path)**: ``
+- **Cổng chạy Local (Local URL)**: ``
+- **Cơ sở dữ liệu (Database)**: PostgreSQL ``
+  - URL Kết nối: ``
 
 ## Hướng dẫn dành cho AI Agent
 
-Khi người dùng đưa ra các yêu cầu liên quan đến API, xử lý logic, đồng bộ dữ liệu hoặc hoàn thành các chức năng tích hợp (ví dụ: *"Hãy xem API login và hoàn thành chức năng login"*):
+Khi người dùng đưa ra các yêu cầu liên quan đến API, xử lý logic, đồng bộ dữ liệu hoặc hoàn thành các chức năng tích hợp (ví dụ: _"Hãy xem API login và hoàn thành chức năng login"_):
 
 1. **CHỦ ĐỘNG ĐỌC CODE BACKEND**: AI **BẮT BUỘC** phải sử dụng các công cụ hệ thống (`list_dir`, `view_file`, `grep_search`) với đường dẫn tuyệt đối `D:\SourceDoan\be-source-doan` để kiểm tra:
    - Các Route/Controller trong `src/routes/` hoặc `src/controllers/`.
